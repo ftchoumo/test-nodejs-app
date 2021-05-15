@@ -6,19 +6,19 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'sudo apt-get install npm'
+           sh 'npm install'
         }
      }
      
      stage('Test') { 
         steps { 
-           sh 'sudo echo "testing application..."'
+           sh 'echo "testing application..."'
         }
       }
 
          stage("Deploy application") { 
          steps { 
-           sh 'sudo echo "deploying application..."'
+           sh 'echo "deploying application..."'
          }
 
      }
