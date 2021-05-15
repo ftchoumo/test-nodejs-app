@@ -35,7 +35,7 @@ Using simple "hello world" application from the [nodejs.org](https://nodejs.org/
    ```sh
    Git URL - https://github.com/ravdy/nodejs.git
    ```
-  BUILD --> Execute Shell npm install
+  BUILD --> Execute Shell npm install on jenkins
    ```sh 
    npm install
    tar czf easyio.tar-$BUILD_NUMBER.gz node_modules main.js package.json public LICENSE
