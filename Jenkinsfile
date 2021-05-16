@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'install npm' 
+           sh 'npm install' 
         }
      }
      
@@ -16,7 +16,7 @@ pipeline {
         }
       }
 
-         stage("Deploy nodejs application") { 
+         stage("Deploy application") { 
          steps { 
            sh 'echo "deploying application..."'
          }
